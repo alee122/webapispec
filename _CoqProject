@@ -1,0 +1,31 @@
+-Q . BrowserInfoFlow
+
+#Import from FRAP
+Map.v
+HOPS.v
+
+# Shared resources
+CookieRecord.v
+Url.v
+DomRecord.v
+LabelRecord.v
+RequestRecord.v
+ResponseRecord.v
+BrowserRecord.v
+
+# Component specific shared resource implementation
+GeneralSigs.v
+GeneralImpl.v
+CookieSigs.v
+CookieImpl.v
+SWSigs.v
+SWImpl.v
+
+# Shared resources for event handlers
+Events.v
+Invariant.v
+
+# Event handlers that abide by invariant for all components
+GeneralEventHandlers.v
+SWEventHandlers.v
+CookieEventHandlers.v
